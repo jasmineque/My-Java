@@ -3,16 +3,16 @@
 
 
 <br>
-<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-1.jpg" ></center>
+<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-1.jpg" width="800" ></center>
 
 * `main()` method's parameter list: can write `String[] args`, `String args[]`, or `String…args`
 * All command-line arguments are treated as `String` objects
 
 <br>
-<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-2.jpg" ></center>
+<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-2.jpg" width="800"></center>
 
 <br>
-<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-3.jpg" ></center>
+<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-3.jpg" width="800"></center>
 
 **<span style="color:red">Numbering System:</span>**
 
@@ -29,7 +29,7 @@
 * or right after a decimal point.
 
 <br>
-<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-4.jpg" ></center>
+<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-4.jpg" width="800"></center>
 <br>
 
 **<span style="color:red">Key Differences between Object References and Primitives:</span>**
@@ -53,14 +53,16 @@
 
 ---
 
-# <span style="color:blue">Variables</span>
+# Variables
 
 <br>
-**<span style="color:red">1. Local Variables</span>**
+
+**1. Local Variables**
+
 * is a variable defined within a method. 
 * Local variables must be _initialized_ before use.
 
-**<span style="color:red">2. Instance and Class Variables:</span>**
+**2. Instance and Class Variables:**
 * Variables that are not local are known as instance variables or class variables.
 * Instance variables are also called fields.
 * Class variables are shared across multiple objects. A class variable has the keyword `static` before it.
@@ -69,7 +71,7 @@
 
 
 <br>
-<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-5.jpg" ></center>
+<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-5.jpg" width="800"></center>
 
 <br>
 
@@ -78,22 +80,22 @@
 <span style="color:purple">___PIC (Order) - Package, Import, Class___</span>
 
 <br>
-<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-6.jpg" width="800" ></center>
+<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-6.jpg" width="600" ></center>
 
 <br>
 
 <br>
-<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-7.jpg" ></center>
+<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-7.jpg" width="800"></center>
 
 <br>
 
 <br>
-<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-8.jpg" width="800" ></center>
+<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-8.jpg" width="600" ></center>
 
 <br>
 
 <br>
-<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-9.jpg" ></center>
+<center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-9.jpg" width="800"></center>
 
 <br>
 
