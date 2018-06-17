@@ -2,6 +2,6 @@
 
 My first repository on GitHub
 
-I love :pizza: and :coffee:
+I love :dog:, :cat:, and :computer:
 
 I'm learning Java!
