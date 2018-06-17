@@ -1,7 +1,13 @@
-
 Three types or operators: **unary, binary, ternary**.
 
-### Order of operator precedence:
+<h3>
+
+```diff
+
+- Order of operator precedence:
+
+```
+</h3>
 
 <br>
 <center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/OperatorPrecedence.JPG" width = "600" ></center>
@@ -9,7 +15,14 @@ Three types or operators: **unary, binary, ternary**.
 The `instanceof` operator is useful for determining whether an arbitrary object is a
 member of a particular class or interface.
 
-### Numeric Promotion Rules:
+<h3>
+
+```diff
+
+- Numeric Promotion Rules:
+
+```
+</h3>
 
 1. If two values have different data types, Java will automatically promote one of the values to the larger of the two data types.
 2. If one of the values is integral and the other is floating-point, Java will automatically promote the integral value to the floating-point value’s data type.
@@ -19,7 +32,14 @@ member of a particular class or interface.
 <br>
 <center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-10.jpg" width = "600" ></center>
 
-### `instanceof` Comparison
+<h3>
+
+```diff
+
+- instanceof Comparison:
+
+```
+</h3>
 
 * used for object reference variables only
 * used to check whether an object is of a particular type (class or interface)
