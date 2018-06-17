@@ -29,9 +29,9 @@
 </h3>
 
 * Decimal
-* Octal, uses the number 0 as a prefix
-* Hexadecimal, uses the number 0 followed by x or X as a prefix
-* Binary, uses the number 0 followed by b or B as a prefix
+* Octal, uses the number `0` as a prefix
+* Hexadecimal, uses the number `0` followed by `x` or `X` as a prefix
+* Binary, uses the number `0` followed by `b` or `B` as a prefix
 
 **Underscores** can be used in numbers to make them easier to read. They can be added anywhere except:
 
