@@ -1,5 +1,12 @@
+<h1>
 
-# JAVA BUILDING BLOCKS
+```diff
+
+! JAVA BUILDING BLOCKS !
+```
+
+</h1>
+
 
 
 <br>
@@ -14,7 +21,12 @@
 <br>
 <center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-3.jpg" width="800"></center>
 
-**<span style="color:red">Numbering System:</span>**
+<h3>
+
+```diff
+- Numbering System:
+```
+</h3>
 
 * Decimal
 * Octal, uses the number 0 as a prefix
@@ -32,7 +44,12 @@
 <center><img src="https://raw.githubusercontent.com/jasmineque/My-Java/master/Images/C1-4.jpg" width="800"></center>
 <br>
 
-**<span style="color:red">Key Differences between Object References and Primitives:</span>**
+<h3>
+
+```diff
+- Key Differences between Object References and Primitives:
+```
+</h3>
 
 |Object References|Primitives|
 |-----------------|----------|
@@ -40,11 +57,23 @@
 |Can be used to call _methods_ when they do not point to null|Do not have methods declared on them|
 |All classes begin with _uppercase_|All the primitive types have _lowercase_ type names|
 
-**<span style="color:red">Java Identifiers:</span>**
+<h3>
+
+```diff
+- Java Identifiers:
+```
+</h3>
+
 * Are used for identification purpose
 * Can be a class name, method name, variable name, or a label
 
-**<span style="color:red">Rules for identifiers:</span>**
+<h3>
+
+```diff
+- Rules for identifiers:
+```
+</h3>
+
 * The only allowed characters for identifiers are _alphanumeric characters_, _dollar sign_ (\$)$ and _underscore_ (_).
 * Identifiers should _not_ start with digits.
 * Identifiers are _case-sensitive_.
@@ -52,22 +81,38 @@
 
 
 ---
+<h2>
 
-# Variables
+```diff
+
+! Variables !
+```
+
+</h2>
+
 
 <br>
 
-**1. Local Variables**
+<h3>
+
+```diff
+- Local Variables:
+```
+</h3>
 
 * is a variable defined within a method. 
 * Local variables must be _initialized_ before use.
 
-**2. Instance and Class Variables:**
+<h3>
+
+```diff
+- Instance and Class Variables:
+```
+</h3>
+
 * Variables that are not local are known as instance variables or class variables.
 * Instance variables are also called fields.
 * Class variables are shared across multiple objects. A class variable has the keyword `static` before it.
-
-
 
 
 <br>
