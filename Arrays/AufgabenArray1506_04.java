@@ -13,7 +13,7 @@ public class AufgabenArray1506_04 {
 		float num = sc.nextFloat();
 		
 		while (num < 0 || num > 50_000) {
-			System.out.println("Die Zahl ist ungültig! Bitte geben Sie eine andere Zahl ein: ");
+			System.out.println("Die Zahl ist ungÃ¼ltig! Bitte geben Sie eine andere Zahl ein: ");
 			num = sc.nextFloat();
 		}
 		
@@ -33,13 +33,13 @@ public class AufgabenArray1506_04 {
 			if (Math.abs(numArray[j] - num) < 1) {
 				count++;
 				System.out.println("Die Zahle " + numArray[j] + " wird an der " + j + ". " + 
-			                       "Stelle gefunden. Möchten Sie nach weiteren Vorkommen suchen? (j/n)");
+			                       "Stelle gefunden. MÃ¶chten Sie nach weiteren Vorkommen suchen? (j/n)");
 				String answer = sc.next();
 				System.out.println("answer = " + answer);
 				if (answer.equals("j") || answer.equals("J") ) {
 					continue;
 				} else {
-					System.out.println("Sie möchten nicht mehr suchen!");
+					System.out.println("Sie mÃ¶chten nicht mehr suchen!");
 					break OUTER;
 				}
 			}
