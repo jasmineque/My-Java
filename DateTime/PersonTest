@@ -1,0 +1,141 @@
+package datetime;
+
+import java.time.LocalDate;
+
+public class PersonTest {
+
+	public static void main(String[] args) {
+
+		Person p1 = new Person("Peter", LocalDate.of(1970, 12, 12));
+
+		System.out.println("Hat " + p1.getName() + " heute Geburtstag? " + p1.hatGeburtstag());
+
+		Person p2 = new Person("Marion", LocalDate.of(1976, 7, 19));
+
+		System.out.println("Hat " + p2.getName() + " heute Geburtstag? " + p2.hatGeburtstag());
+
+		Person p3 = new Person("Robbin", LocalDate.of(2030, 8, 20));
+
+		System.out.println("Hat " + p2.getName() + " heute Geburtstag? " + p2.hatGeburtstag());
+
+		System.out.println("Alter von " + p1.getName() + ": " + p1.berechneAlter());
+		System.out.println("Alter von " + p2.getName() + ": " + p2.berechneAlter());
+		System.out.println("Alter von " + p3.getName() + ": " + p3.berechneAlter());
+
+	}
+
+}
+
+class Person {
+
+	private String name;
+
+	private LocalDate geburtsdatum;
+
+	Person(String name, LocalDate geburtsdatum) {
+
+		this.setName(name);
+
+		this.setGeburtsdatum(geburtsdatum);
+
+	}
+
+	public String getName() {
+
+		return name;
+
+	}
+
+	public void setName(String name) throws IllegalArgumentException {
+		// Name darf nicht null sein und muss mind. 3 Zeichen haben; sonst IAE
+		if (name == null || name.length() < 3) {
+			throw new IllegalArgumentException("Name darf nicht null sein und muss mindestens drei Zeichen enthalten.");
+		}
+		this.name = name;
+
+	}
+
+	public LocalDate getGeburtsdatum() {
+
+		return geburtsdatum;
+
+	}
+
+	public void setGeburtsdatum(LocalDate geburtsdatum) {
+		// Geburtsdatum darf nicht in der Zukunft liegen, sonst IAE
+		// if ((geburtsdatum.compareTo(LocalDate.now()) > 0)) {
+		// throw new IllegalArgumentException("Geburtsdatum darf nicht in der Zukunft
+		// liegen");
+		// }
+		LocalDate heute = LocalDate.now();
+		// if (geburtsdatum.isAfter(heute) ||
+		// heute.isBefore(geburtsdatum)||heute.toEpochDay() < geburtsdatum.toEpochDay())
+		// {
+		// throw new IllegalArgumentException("Geburtsdatum darf nicht in der Zukunft
+		// liegen: " + geburtsdatum);
+		// }
+		this.geburtsdatum = geburtsdatum;
+
+	}
+
+	public int berechneAlter() {
+
+		LocalDate heute = LocalDate.now();
+		// int alter = 0;
+		int alter = heute.getYear() - this.getGeburtsdatum().getYear();
+
+		// if (geburtsdatum.isAfter(heute) || heute.isBefore(geburtsdatum)
+		// || heute.toEpochDay() < geburtsdatum.toEpochDay()) {
+		// alter = 0;
+		// } else if
+		// ((LocalDate.now().getMonth().compareTo(this.getGeburtsdatum().getMonth()) <
+		// 0) ||
+		// (LocalDate.now().getMonth().compareTo(this.getGeburtsdatum().getMonth()) ==
+		// 0)
+		// && (LocalDate.now().getDayOfMonth() <
+		// (this.getGeburtsdatum().getDayOfMonth()))) {
+		// alter = LocalDate.now().getYear() - this.getGeburtsdatum().getYear() - 1;
+		// } else {
+		// alter = LocalDate.now().getYear() - this.getGeburtsdatum().getYear();
+		// }
+
+		// if (geburtsdatum.isAfter(heute) || heute.isBefore(geburtsdatum)
+		// || heute.toEpochDay() < geburtsdatum.toEpochDay()) {
+		// alter = 0;
+		// } else if (geburtsdatum.getMonthValue() > heute.getMonthValue()
+		// || geburtsdatum.getMonthValue() == heute.getMonthValue()
+		// && geburtsdatum.getDayOfMonth() > heute.getDayOfMonth()) {
+		// alter--;
+		// }
+
+		// Alternative: Geburtsdatum in diesem Jahr ermitteln
+		 LocalDate geburtstag = geburtsdatum.withYear(heute.getYear());
+		
+		 if (geburtsdatum.isAfter(heute) || heute.isBefore(geburtsdatum)
+		 || heute.toEpochDay() < geburtsdatum.toEpochDay()) {
+		 alter = 0;
+		 } else if (geburtstag.isAfter(heute)) {
+		 alter--;
+		 }
+		 return alter;
+
+		// return Period.between(geburtsdatum, heute).getYears();
+
+//		return (int) ChronoUnit.YEARS.between(geburtsdatum, heute);
+	}
+
+	public boolean hatGeburtstag() {
+		LocalDate geburtsdatum = this.getGeburtsdatum();
+		// if (LocalDate.now().getMonth() == geburtsdatum.getMonth() &&
+		// LocalDate.now().getDayOfMonth() == geburtsdatum.getDayOfMonth()) {
+		// return true;
+		// }
+		// return false;
+
+		return LocalDate.now().getMonth() == geburtsdatum.getMonth()
+				&& LocalDate.now().getDayOfMonth() == geburtsdatum.getDayOfMonth()
+				&& LocalDate.now().getYear() >= geburtsdatum.getYear();
+
+	}
+
+}
